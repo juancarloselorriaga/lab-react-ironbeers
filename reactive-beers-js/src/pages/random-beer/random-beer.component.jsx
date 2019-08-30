@@ -1,11 +1,18 @@
-import React from 'react';
+import React from "react";
+import RandomBeerImage from "../../assets/random-beer.png";
 
-import './random-beer.styles.scss'
+import Hero from '../../components/hero/hero.component';
+
+import "./random-beer.styles.scss";
 
 const RandomBeer = () => (
   <div>
-    <h1>Random Beer</h1>
+    <Hero
+      background={ RandomBeerImage }
+      title="Random Beer"
+      subtitle="Choose a random beer!"
+    />
   </div>
-)
+);
 
 export default RandomBeer;

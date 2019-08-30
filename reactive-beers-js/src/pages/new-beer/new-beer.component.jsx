@@ -1,11 +1,18 @@
-import React from 'react';
+import React from "react";
+import NewBeerImage from "../../assets/new-beer.png";
 
-import './new-beer.styles.scss'
+import Hero from "../../components/hero/hero.component";
+
+import "./new-beer.styles.scss";
 
 const NewBeer = () => (
   <div>
-    <h1>New Beer</h1>
+    <Hero
+      background={ NewBeerImage }
+      title="New Beer"
+      subtitle="You can add a new beer!"
+    />
   </div>
-)
+);
 
 export default NewBeer;
